@@ -13,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class demo {
 
 WebDriver driver ;
-	
+	int zz = 10;
 	public static void main (String [] args) {
 		
 		demo EB = new  demo();
