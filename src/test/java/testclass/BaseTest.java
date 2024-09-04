@@ -9,10 +9,12 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import PageClass.LoginPageClass;
+import PageClass.SignupPage;
 
 public class BaseTest {
 static WebDriver driver;
 static LoginPageClass loginPage;
+SignupPage signupPage;
 @BeforeSuite
 	public  void initBrowser() {
 		
@@ -29,6 +31,7 @@ static LoginPageClass loginPage;
 	public void createObject() {
 		
 		 loginPage = new LoginPageClass(driver);
+		 signupPage = new SignupPage(driver);
 	}
 	@AfterSuite
 	public void tearDown() {

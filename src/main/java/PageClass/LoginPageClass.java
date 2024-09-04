@@ -28,7 +28,7 @@ public LoginPageClass (WebDriver driver) {
 public void loginCredentials() {
 	
 	userName.sendKeys("Admin");
-	password.sendKeys("admin123");
+	password.sendKeys();
 }
 public void clickLoginButton() {
 	
